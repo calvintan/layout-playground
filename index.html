@@ -3,20 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Layout Playground</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div id="app">
       <aside>
         <div class="logo">Logo</div>
-        <nav>
-          <ul>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
-        </nav>
+        <ul>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
       </aside>
       <div class="layout">
         <div class="bar">
@@ -35,6 +33,32 @@
         <main>
           <div id="wrapper">
             <h1>Page Title</h1>
+            <nav role="tablist" class="ant-tabs-nav">
+              <div class="ant-tabs-nav-wrap">
+                <div class="ant-tabs-nav-list" style="transform: translate(0px, 0px)">
+                  <div data-node-key="1" class="ant-tabs-tab ant-tabs-tab-active">
+                    <div role="tab" aria-selected="true" class="ant-tabs-tab-btn" tabindex="0">
+                      Tab 1
+                    </div>
+                  </div>
+                  <div data-node-key="2" class="ant-tabs-tab">
+                    <div role="tab" aria-selected="false" class="ant-tabs-tab-btn" tabindex="0">
+                      Tab 2
+                    </div>
+                  </div>
+                  <div data-node-key="3" class="ant-tabs-tab">
+                    <div role="tab" aria-selected="false" class="ant-tabs-tab-btn" tabindex="0">
+                      Tab 3
+                    </div>
+                  </div>
+                  <div
+                    class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                    style="left: 0px; width: 72px"
+                  ></div>
+                </div>
+              </div>
+              <div class="ant-tabs-nav-operations ant-tabs-nav-operations-hidden"></div>
+            </nav>
             <div id="grid" class="col-10">
               <div class="ant-card">
                 <div class="ant-card-head">
@@ -53,44 +77,170 @@
                 <div class="ant-card-body">
                   <div id="card-wrapper">
                     <div class="ant-form active">
-                      <div class="ant-row ant-form-item-row">
-                        <div class="ant-col ant-form-item-label">
-                          <label
-                            class="ant-form-item-required ant-form-item-required-mark-optional"
-                            title="Field A"
-                            >Field A</label
-                          >
+                      <div class="block">
+                        <div class="block-title">
+                          <p>Details</p>
                         </div>
-                        <div class="ant-col ant-form-item-control">
-                          <div class="ant-form-item-control-input">
-                            <div class="ant-form-item-control-input-content">
-                              <input
-                                placeholder="input placeholder"
-                                class="ant-input"
-                                type="text"
-                                value=""
-                              />
+                        <div class="block-content">
+                          <div class="ant-row" style="margin-left: -8px; margin-right: -8px">
+                            <div
+                              class="ant-col ant-col-12"
+                              style="padding-left: 8px; padding-right: 8px"
+                            >
+                              <div class="ant-form-item">
+                                <div class="ant-row ant-form-item-row">
+                                  <div class="ant-col ant-form-item-label">
+                                    <label for="name" class="ant-form-item-required" title="Name"
+                                      >Name</label
+                                    >
+                                  </div>
+                                  <div class="ant-col ant-form-item-control">
+                                    <div class="ant-form-item-control-input">
+                                      <div class="ant-form-item-control-input-content">
+                                        <input
+                                          placeholder="Please enter user name"
+                                          id="name"
+                                          aria-required="true"
+                                          class="ant-input"
+                                          type="text"
+                                          value=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="ant-col ant-col-12"
+                              style="padding-left: 8px; padding-right: 8px"
+                            >
+                              <div class="ant-form-item">
+                                <div class="ant-row ant-form-item-row">
+                                  <div class="ant-col ant-form-item-label">
+                                    <label for="name" class="ant-form-item-required" title="Name"
+                                      >Phone</label
+                                    >
+                                  </div>
+                                  <div class="ant-col ant-form-item-control">
+                                    <div class="ant-form-item-control-input">
+                                      <div class="ant-form-item-control-input-content">
+                                        <input
+                                          placeholder="Please enter phone number"
+                                          id="name"
+                                          aria-required="true"
+                                          class="ant-input"
+                                          type="text"
+                                          value=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
+                          <!-- /ant-row -->
+                          <div class="ant-row" style="margin-left: -8px; margin-right: -8px">
+                            <div
+                              class="ant-col ant-col-12"
+                              style="padding-left: 8px; padding-right: 8px"
+                            >
+                              <div class="ant-form-item">
+                                <div class="ant-row ant-form-item-row">
+                                  <div class="ant-col ant-form-item-label">
+                                    <label for="name" class="ant-form-item-required" title="Name"
+                                      >Name</label
+                                    >
+                                  </div>
+                                  <div class="ant-col ant-form-item-control">
+                                    <div class="ant-form-item-control-input">
+                                      <div class="ant-form-item-control-input-content">
+                                        <input
+                                          placeholder="Please enter user name"
+                                          id="name"
+                                          aria-required="true"
+                                          class="ant-input"
+                                          type="text"
+                                          value=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="ant-col ant-col-12"
+                              style="padding-left: 8px; padding-right: 8px"
+                            >
+                              <div class="ant-form-item">
+                                <div class="ant-row ant-form-item-row">
+                                  <div class="ant-col ant-form-item-label">
+                                    <label for="name" class="ant-form-item-required" title="Name"
+                                      >Phone</label
+                                    >
+                                  </div>
+                                  <div class="ant-col ant-form-item-control">
+                                    <div class="ant-form-item-control-input">
+                                      <div class="ant-form-item-control-input-content">
+                                        <input
+                                          placeholder="Please enter phone number"
+                                          id="name"
+                                          aria-required="true"
+                                          class="ant-input"
+                                          type="text"
+                                          value=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /ant-row -->
                         </div>
                       </div>
-                      <div class="ant-row ant-form-item-row">
-                        <div class="ant-col ant-form-item-label">
-                          <label
-                            class="ant-form-item-required ant-form-item-required-mark-optional"
-                            title="Field A"
-                            >Field A</label
-                          >
+                      <div class="block">
+                        <div class="block-title">
+                          <p>Details</p>
                         </div>
-                        <div class="ant-col ant-form-item-control">
-                          <div class="ant-form-item-control-input">
-                            <div class="ant-form-item-control-input-content">
-                              <input
-                                placeholder="input placeholder"
-                                class="ant-input"
-                                type="text"
-                                value=""
-                              />
+                        <div class="block-content">
+                          <div class="ant-row">
+                            <div class="ant-col ant-col-12">
+                              <div class="ant-form-item">
+                                <div class="ant-row ant-form-item-row">
+                                  <span class="ant-descriptions-item-label">Name</span>
+                                  <span class="ant-descriptions-item-content">John Doe</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="ant-col ant-col-12">
+                              <div class="ant-form-item">
+                                <div class="ant-row ant-form-item-row">
+                                  <span class="ant-descriptions-item-label">Phone</span>
+                                  <span class="ant-descriptions-item-content">123456789</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ant-row">
+                            <div class="ant-col ant-col-12">
+                              <div class="ant-form-item">
+                                <div class="ant-row ant-form-item-row">
+                                  <span class="ant-descriptions-item-label">Name</span>
+                                  <span class="ant-descriptions-item-content">John Doe</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="ant-col ant-col-12">
+                              <div class="ant-form-item">
+                                <div class="ant-row ant-form-item-row">
+                                  <span class="ant-descriptions-item-label">Phone</span>
+                                  <span class="ant-descriptions-item-content">123456789</span>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -105,32 +255,21 @@
                               <tr>
                                 <th class="ant-table-cell" scope="col">Name</th>
                                 <th class="ant-table-cell" scope="col">Age</th>
-                                <th class="ant-table-cell" scope="col">
-                                  Address
-                                </th>
+                                <th class="ant-table-cell" scope="col">Address</th>
                                 <th class="ant-table-cell" scope="col">Tags</th>
-                                <th class="ant-table-cell" scope="col">
-                                  Action
-                                </th>
+                                <th class="ant-table-cell" scope="col">Action</th>
                               </tr>
                             </thead>
                             <tbody class="ant-table-tbody">
-                              <tr
-                                data-row-key="1"
-                                class="ant-table-row ant-table-row-level-0"
-                              >
+                              <tr data-row-key="1" class="ant-table-row ant-table-row-level-0">
                                 <td class="ant-table-cell">
                                   <a>John Brown</a>
                                 </td>
                                 <td class="ant-table-cell">32</td>
-                                <td class="ant-table-cell">
-                                  New York No. 1 Lake Park
-                                </td>
+                                <td class="ant-table-cell">New York No. 1 Lake Park</td>
                                 <td class="ant-table-cell">
                                   <span class="ant-tag ant-tag-green">NICE</span
-                                  ><span class="ant-tag ant-tag-geekblue"
-                                    >DEVELOPER</span
-                                  >
+                                  ><span class="ant-tag ant-tag-geekblue">DEVELOPER</span>
                                 </td>
                                 <td class="ant-table-cell">
                                   <div
@@ -146,19 +285,12 @@
                                   </div>
                                 </td>
                               </tr>
-                              <tr
-                                data-row-key="2"
-                                class="ant-table-row ant-table-row-level-0"
-                              >
+                              <tr data-row-key="2" class="ant-table-row ant-table-row-level-0">
                                 <td class="ant-table-cell"><a>Jim Green</a></td>
                                 <td class="ant-table-cell">42</td>
+                                <td class="ant-table-cell">London No. 1 Lake Park</td>
                                 <td class="ant-table-cell">
-                                  London No. 1 Lake Park
-                                </td>
-                                <td class="ant-table-cell">
-                                  <span class="ant-tag ant-tag-volcano"
-                                    >LOSER</span
-                                  >
+                                  <span class="ant-tag ant-tag-volcano">TAG</span>
                                 </td>
                                 <td class="ant-table-cell">
                                   <div
@@ -174,20 +306,13 @@
                                   </div>
                                 </td>
                               </tr>
-                              <tr
-                                data-row-key="3"
-                                class="ant-table-row ant-table-row-level-0"
-                              >
+                              <tr data-row-key="3" class="ant-table-row ant-table-row-level-0">
                                 <td class="ant-table-cell"><a>Joe Black</a></td>
                                 <td class="ant-table-cell">32</td>
-                                <td class="ant-table-cell">
-                                  Sydney No. 1 Lake Park
-                                </td>
+                                <td class="ant-table-cell">Sydney No. 1 Lake Park</td>
                                 <td class="ant-table-cell">
                                   <span class="ant-tag ant-tag-green">COOL</span
-                                  ><span class="ant-tag ant-tag-geekblue"
-                                    >TEACHER</span
-                                  >
+                                  ><span class="ant-tag ant-tag-geekblue">TEACHER</span>
                                 </td>
                                 <td class="ant-table-cell">
                                   <div
@@ -211,21 +336,13 @@
                     <div class="ant-tabs ant-tabs-top ant-tabs-mobile">
                       <div role="tablist" class="ant-tabs-nav">
                         <div class="ant-tabs-nav-wrap">
-                          <div
-                            class="ant-tabs-nav-list"
-                            style="transform: translate(0px, 0px)"
-                          >
-                            <div
-                              data-node-key="1"
-                              class="ant-tabs-tab ant-tabs-tab-active"
-                            >
+                          <div class="ant-tabs-nav-list" style="transform: translate(0px, 0px)">
+                            <div data-node-key="1" class="ant-tabs-tab ant-tabs-tab-active">
                               <div
                                 role="tab"
                                 aria-selected="true"
                                 class="ant-tabs-tab-btn"
                                 tabindex="0"
-                                id="rc-tabs-133-tab-1"
-                                aria-controls="rc-tabs-133-panel-1"
                               >
                                 Tab 1
                               </div>
@@ -236,8 +353,6 @@
                                 aria-selected="false"
                                 class="ant-tabs-tab-btn"
                                 tabindex="0"
-                                id="rc-tabs-133-tab-2"
-                                aria-controls="rc-tabs-133-panel-2"
                               >
                                 Tab 2
                               </div>
@@ -248,21 +363,17 @@
                                 aria-selected="false"
                                 class="ant-tabs-tab-btn"
                                 tabindex="0"
-                                id="rc-tabs-133-tab-3"
-                                aria-controls="rc-tabs-133-panel-3"
                               >
                                 Tab 3
                               </div>
                             </div>
                             <div
                               class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
-                              style="left: 0px; width: 33px"
+                              style="left: 0px; width: 66px"
                             ></div>
                           </div>
                         </div>
-                        <div
-                          class="ant-tabs-nav-operations ant-tabs-nav-operations-hidden"
-                        ></div>
+                        <div class="ant-tabs-nav-operations ant-tabs-nav-operations-hidden"></div>
                       </div>
                       <div class="ant-tabs-content-holder">
                         <div class="ant-tabs-content ant-tabs-content-top">
